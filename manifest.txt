@@ -1,0 +1,16 @@
+f(x)=a_nx^n+\cdots+a_1x+a_0@@polynomial
+f(x)=\frac{p(x)}{q(x)},\ q(x)\ne0@@rational
+x^n@@power
+\sqrt[n]{x}@@root
+a^x\;(a>0,\ a\ne1)@@exponential
+\log_a x\;(x>0)@@logarithmic
+\sin x,\cos x,\tan x,\ldots@@trigonometric
+
+
+a^m a^n=a^{m+n}@@Exponent rule 1
+\frac{a^m}{a^n}=a^{m-n}\;(a\ne0)@@Exponent rule 2
+\left(a^m\right)^n=a^{mn}@@Exponent rule 3
+(ab)^n=a^n b^n@@Exponent rule 4
+\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}\;(b\ne0)@@Exponent rule 5
+a^0=1\;(a\ne0),\ a^{-n}=\frac{1}{a^n}@@Exponent rule 6
+

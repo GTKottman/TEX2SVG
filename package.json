@@ -1,0 +1,31 @@
+{
+  "name": "latex-math-to-svg",
+  "version": "1.0.0",
+  "description": "CLI: TeX/LaTeX math to vector SVG using MathJax 3",
+  "type": "module",
+  "bin": {
+    "latextosvg": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "latex",
+    "math",
+    "svg",
+    "mathjax"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "mathjax-full": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
