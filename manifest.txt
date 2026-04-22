@@ -6,7 +6,6 @@ a^x\;(a>0,\ a\ne1)@@exponential
 \log_a x\;(x>0)@@logarithmic
 \sin x,\cos x,\tan x,\ldots@@trigonometric
 
-
 a^m a^n=a^{m+n}@@Exponent rule 1
 \frac{a^m}{a^n}=a^{m-n}\;(a\ne0)@@Exponent rule 2
 \left(a^m\right)^n=a^{mn}@@Exponent rule 3
@@ -14,3 +13,25 @@ a^m a^n=a^{m+n}@@Exponent rule 1
 \left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}\;(b\ne0)@@Exponent rule 5
 a^0=1\;(a\ne0),\ a^{-n}=\frac{1}{a^n}@@Exponent rule 6
 
+\sqrt[n]{ab}=\sqrt[n]{a}\sqrt[n]{b}@@Radicals 1
+\sqrt[n]{\frac{a}{b}}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}\;(b\ne0)@@Radicals 2
+\left(\sqrt[n]{a}\right)^n=a\;(a\ge0\ \text{if }n\text{ even})@@Radicals 3
+\sqrt{a^2}=|a|@@Radicals 4
+\text{Rationalize denominators}@@Radicals 5
+
+(a+b)^2=a^2+2ab+b^2@@Special Products 1
+(a-b)^2=a^2-2ab+b^2@@Special Products 2
+(a+b)(a-b)=a^2-b^2@@Special Products 3
+
+\sin^2 x+\cos^2 x=1@@Pythagorean Identities 1
+1+\tan^2 x=\sec^2 x@@Pythagorean Identities 2
+1+\cot^2 x=\csc^2 x@@Pythagorean Identities 3
+
+\tan x=\frac{\sin x}{\cos x}@@Quotient Identities 1
+\cot x=\frac{\cos x}{\sin x}@@Quotient Identities 2
+\sec x=\frac{1}{\cos x}@@Quotient Identities 3
+\csc x=\frac{1}{\sin x}@@Quotient Identities 4
+
+\sin x=\frac{1}{\csc x}@@Reciprocal Identities 1
+\cos x=\frac{1}{\sec x}@@Reciprocal Identities 2
+\tan x=\frac{1}{\cot x}@@Reciprocal Identities 3
