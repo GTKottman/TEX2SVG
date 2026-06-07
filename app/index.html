@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>LaTeX to SVG</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>LaTeX to SVG</h1>
+        <p class="subtitle">Turn math expressions into vector SVG files</p>
+      </header>
+
+      <main class="main">
+        <label class="field-label" for="tex-input">Math expression</label>
+        <textarea
+          id="tex-input"
+          class="tex-input"
+          rows="4"
+          spellcheck="false"
+          placeholder="e.g. \frac{a}{b} or x^2 + y^2 = r^2"
+        ></textarea>
+
+        <div class="controls">
+          <label class="toggle">
+            <input type="checkbox" id="display-mode" />
+            <span>Display (block) math</span>
+          </label>
+          <button type="button" id="clear-btn" class="btn btn-secondary">Clear</button>
+        </div>
+
+        <section class="preview-section">
+          <h2 class="section-title">Preview</h2>
+          <div id="preview" class="preview" aria-live="polite">
+            <p class="preview-placeholder">Enter LaTeX above to see the SVG preview.</p>
+          </div>
+          <p id="error" class="error" hidden></p>
+        </section>
+
+        <div class="actions">
+          <button type="button" id="copy-btn" class="btn" disabled>Copy SVG</button>
+          <button type="button" id="save-btn" class="btn btn-primary" disabled>
+            Save SVG
+          </button>
+        </div>
+
+        <details class="reference">
+          <summary>Example formulas</summary>
+          <ul id="examples" class="examples"></ul>
+        </details>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

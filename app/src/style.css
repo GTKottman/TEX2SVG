@@ -1,0 +1,243 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --text: #1a1f36;
+  --muted: #5c6478;
+  --border: #d8deea;
+  --accent: #3b5bdb;
+  --accent-pressed: #2f4ac0;
+  --danger: #c92a2a;
+  --shadow: 0 8px 24px rgba(26, 31, 54, 0.08);
+  --radius: 14px;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1117;
+    --surface: #171a22;
+    --text: #eef1f8;
+    --muted: #a4adbe;
+    --border: #2b3140;
+    --accent: #748ffc;
+    --accent-pressed: #5c7cfa;
+    --danger: #ff8787;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  padding:
+    max(16px, env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right))
+    max(16px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
+}
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0 0 6px;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.main {
+  display: grid;
+  gap: 14px;
+}
+
+.field-label,
+.section-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.tex-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: 1rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  resize: vertical;
+  min-height: 110px;
+  box-shadow: var(--shadow);
+}
+
+.tex-input:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-color: var(--accent);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  user-select: none;
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.preview-section {
+  display: grid;
+  gap: 10px;
+}
+
+.preview {
+  min-height: 120px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.preview-placeholder {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.preview-placeholder--error {
+  color: var(--danger);
+}
+
+.error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 0.92rem;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 12px 16px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:not(:disabled):active {
+  background: var(--accent-pressed);
+}
+
+.btn-secondary:not(:disabled):active {
+  background: color-mix(in srgb, var(--border) 55%, var(--surface));
+}
+
+.reference {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 12px 14px;
+}
+
+.reference summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.examples {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.example-btn {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.example-btn:active {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.example-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.example-btn code {
+  font-size: 0.92rem;
+  word-break: break-word;
+}
