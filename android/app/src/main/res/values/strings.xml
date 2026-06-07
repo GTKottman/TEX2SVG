@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LaTeX to SVG</string>
+    <string name="title_activity_main">LaTeX to SVG</string>
+    <string name="package_name">com.latextosvg.app</string>
+    <string name="custom_url_scheme">com.latextosvg.app</string>
+</resources>
